@@ -34,6 +34,7 @@ export const Companies = ({ companies }: ReduxProps & DispatchProps) => {
           key={company.id}
           {...company}
           onClick={(id) => handleSelectCompany(id)}
+          {...{[`data-test-company-link-${company.id}`]: true}}
         />
       ))}
     </>

@@ -6,14 +6,18 @@ exports[`<Companies /> renders list of company links 1`] = `
     Your companies
   </div>
   <CompanyLink
+    data-test-company-link-1={true}
     id={1}
     key="1"
     name="Dummy company"
+    onClick={[Function]}
   />
   <CompanyLink
+    data-test-company-link-2={true}
     id={2}
     key="2"
     name="Smarty company"
+    onClick={[Function]}
   />
 </Fragment>
 `;
