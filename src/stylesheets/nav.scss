@@ -4,6 +4,8 @@
   justify-content: flex-end;
 
   padding: 16px;
+
+  position: relative;
 }
 
 .nav__link {
@@ -41,4 +43,95 @@
 
 .nav__link-icon {
   margin-left: 8px;
+}
+
+.nav__menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #DCDCE0;
+  box-sizing: border-box;
+  width: 300px;
+
+  box-shadow: 0px 2px 8px rgba(51, 51, 51, 0.24);
+  border-radius: 8px;
+}
+
+.nav__menu > *:not(:last-child) {
+  border-bottom: 1px solid $grey-3;
+}
+
+.nav__menu__companies-link,
+.nav__menu__link {
+  cursor: pointer;
+}
+
+.nav__menu__companies {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__menu__companies-title {
+  padding: 12px 16px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: $grey-6;
+  margin-bottom: 4px;
+}
+
+.nav__menu__companies-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark;
+  background: $white;
+  padding: 12px 16px;
+
+  &:hover, &:focus {
+    background-color: $grey-1;
+  }
+  &:active {
+    background-color: $grey-2;
+  }
+
+  &.selected {
+    color: $dark-green;
+    background: rgba(55, 164, 71, 0.1);
+
+    &:hover, &:focus {
+      background-color: rgba(55, 164, 71, 0.2);
+    }
+  }
+}
+
+.nav__menu__link {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $dark;
+
+  &:first-of-type {
+    padding-top: 16px;
+  }
+  &:last-of-type {
+    padding-bottom: 16px;
+  }
+
+  &.logout {
+    color: $red;
+  }
+}
+
+.nav__menu__link > i {
+  margin-right: 8px;
+}
+
+.nav__menu i {
+  font-size: 20px;
 }

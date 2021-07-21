@@ -26,8 +26,8 @@ export const Companies = ({ companies }: ReduxProps & DispatchProps) => {
   }
 
   return (
-    <>
-      <div>Your companies</div>
+    <div className="nav__menu__companies">
+      <div className="nav__menu__companies-title">Your companies</div>
 
       {companies.map((company) => (
         <CompanyLink
@@ -37,7 +37,7 @@ export const Companies = ({ companies }: ReduxProps & DispatchProps) => {
           {...{[`data-test-company-link-${company.id}`]: true}}
         />
       ))}
-    </>
+    </div>
   )
 }
 
