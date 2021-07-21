@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import { Company, ReduxState } from './types'
-import { getIsDropdownMenuVisible, getCompanySelected, getCompanySelectedId } from './selectors'
-import { toggleDropdownMenuVisibility } from './actions'
+import { Company, ReduxState } from '../../types'
+import { getIsDropdownMenuVisible, getCompanySelected, getCompanySelectedId } from '../../redux/selectors'
+import { toggleDropdownMenuVisibility } from '../../redux/actions'
 
-import DropdownMenu from './DropdownMenu'
+import DropdownMenu from '../dropdown-menu/DropdownMenu'
 
 type ReduxProps = {
   isDropdownMenuVisible: boolean,

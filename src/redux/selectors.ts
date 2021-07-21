@@ -1,4 +1,4 @@
-import { ReduxState, Company } from './types'
+import { ReduxState, Company } from '../types'
 
 export const getIsDropdownMenuVisible = (state: ReduxState) =>
   state.isDropdownMenuVisible

@@ -1,11 +1,11 @@
 import { connect, useDispatch } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
-import { ReduxState, Company } from './types'
-import { getCompanies } from './selectors'
-import { setSelectedCompanyId, toggleDropdownMenuVisibility } from './actions'
+import { ReduxState, Company } from '../../types'
+import { getCompanies } from '../../redux/selectors'
+import { setSelectedCompanyId, toggleDropdownMenuVisibility } from '../../redux/actions'
 
-import CompanyLink from './CompanyLink'
+import CompanyLink from '../company-link/CompanyLink'
 
 type ReduxProps = {
   companies: Array<Company>,

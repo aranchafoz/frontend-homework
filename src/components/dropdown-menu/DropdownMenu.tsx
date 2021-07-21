@@ -1,5 +1,5 @@
-import MenuLink from './MenuLink'
-import Companies from './Companies'
+import MenuLink from '../menu-link/MenuLink'
+import Companies from '../companies/Companies'
 
 const DropdownMenu = () => (
   <div>

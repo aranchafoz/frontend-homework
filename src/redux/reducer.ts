@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { createReducer } from 'typesafe-actions'
 
-import { Action, Company } from './types'
+import { Action, Company } from '../types'
 import * as actions from './actions'
 
 export const isDropdownMenuVisible = createReducer<boolean, Action>(false)

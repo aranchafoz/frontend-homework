@@ -1,6 +1,6 @@
 import './stylesheets/index.scss'
 
-import DropdownLink from './DropdownLink'
+import DropdownLink from './components/dropdown-link/DropdownLink'
 
 const App = () => (
   <nav className="nav">

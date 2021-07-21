@@ -1,4 +1,4 @@
-import { Company } from './types'
+import { Company } from '../../types'
 
 type Props = {
   onClick: (id: number) => void;

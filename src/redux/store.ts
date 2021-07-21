@@ -3,7 +3,7 @@ import thunkMiddleware from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 import reducer from './reducer'
-import { ReduxState } from './types'
+import { ReduxState } from '../types'
 
 const initialState: ReduxState = {
   isDropdownMenuVisible: false,
